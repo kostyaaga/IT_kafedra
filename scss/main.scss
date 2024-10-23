@@ -466,4 +466,33 @@ $color-gray: #808080;
   }
 }
 
+.questions{
+  padding: 5% 0;
+background: linear-gradient(212deg, rgb(235 71 139 / 37%) -95%, #FFFFFF 68%, rgb(71 84 235 / 22%) 82%, rgba(134, 51, 176, 0.5019607843) 92%)
+}
+
+
+.questions-inner{
+  h4{
+    font-size: 1.5vw;
+  }
+}
+
+.question-tittle{
+  padding: 1%;
+  border-radius: 15px;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(255 255 255 / 50%);
+}
+
+.question-text{
+  background: rgb(255 255 255 / 30%);
+  padding: 3%;
+  font-size: 1.1vw;
+  border-radius: 0 0 15px 15px;
+}
+
 

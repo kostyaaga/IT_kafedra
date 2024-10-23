@@ -433,4 +433,30 @@ header {
   left: 40%;
 }
 
+.questions {
+  padding: 5% 0;
+  background: linear-gradient(212deg, rgba(235, 71, 139, 0.37) -95%, #FFFFFF 68%, rgba(71, 84, 235, 0.22) 82%, rgba(134, 51, 176, 0.5019607843) 92%);
+}
+
+.questions-inner h4 {
+  font-size: 1.5vw;
+}
+
+.question-tittle {
+  padding: 1%;
+  border-radius: 15px;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.question-text {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 3%;
+  font-size: 1.1vw;
+  border-radius: 0 0 15px 15px;
+}
+
 /*# sourceMappingURL=main.css.map */
