@@ -8,12 +8,12 @@
   src: url("../fonts/VisueltPro-Bold.ttf");
 }
 html {
-  background-color: #F2F2F2;
+  background-color: #e4e4e4;
 }
 
 body {
   margin: 24px;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 25px;
   font-family: "VisueltPro";
   display: block;
@@ -213,10 +213,9 @@ header {
 }
 
 .work {
-  padding: 30px;
+  padding: 5% 0 3% 0;
   background: linear-gradient(40deg, rgba(235, 71, 139, 0.368627451) -95%, #FFFFFF 68%, rgba(71, 84, 235, 0.3803921569) 82%, rgba(134, 51, 176, 0.5019607843) 92%);
 }
-
 .work h2 {
   font-size: 3vw;
 }
@@ -278,6 +277,160 @@ header {
   color: #808080;
   font-size: 0.9vw;
   width: 60%;
+}
+
+.tariff-title {
+  font-size: 3vw;
+  margin: 6% 0;
+}
+
+.tariff-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.tariff-item__title {
+  font-size: 1.4vw;
+}
+
+.tariff-price p:first-child {
+  color: #4754EB;
+}
+
+.tariff-price p:last-child {
+  color: #808080;
+}
+
+.tariff-price {
+  margin: 2% 0 8%;
+  display: flex;
+}
+
+.tariff-item__description {
+  display: flex;
+  gap: 5%;
+  margin-top: 8%;
+  align-items: start;
+  color: #808080;
+}
+.tariff-item__description img {
+  width: 2vw;
+}
+.tariff-item__description p {
+  font-size: 1vw;
+}
+
+.tariff-item button {
+  width: 17vw;
+  margin: 15% 0 30%;
+  height: 3vw;
+  border: none;
+  border-radius: 15px;
+  color: #4754EB;
+  background-color: #ffffff;
+  font-size: 1vw;
+}
+
+.comments {
+  padding: 7% 0;
+  background: linear-gradient(90deg, #FFFFFF 72%, rgba(71, 84, 235, 0.3411764706) 87%, rgba(134, 51, 176, 0.4117647059) 95%);
+}
+
+.comments-inner h3 {
+  font-size: 3vw;
+  margin-bottom: 5%;
+}
+.comments-inner > p {
+  text-align: center;
+  color: #808080;
+  font-size: 1.3vw;
+}
+
+.comments-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.comments-item {
+  width: 40%;
+  background: #ffffff;
+  border-radius: 15px;
+  margin-bottom: 3%;
+  padding: 3%;
+}
+.comments-item > p {
+  font-size: 1.1vw;
+  color: #808080;
+  margin: 7% 0 2% 0;
+}
+
+.comments-item__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3vw;
+}
+.comments-item__title div {
+  display: flex;
+  align-items: center;
+}
+.comments-item__title div img {
+  border-radius: 360px;
+  margin-right: 10%;
+  width: 6.5vw;
+}
+.comments-item__title div .name {
+  white-space: nowrap;
+}
+
+.comments-item__star img {
+  width: 2vw;
+}
+
+.sale {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+.sale img {
+  width: 50vw;
+}
+
+.sale-text h2 {
+  font-size: 3vw;
+}
+.sale-text p {
+  font-size: 0.9vw;
+  width: 70%;
+}
+.sale-text a {
+  color: #4754EB;
+}
+
+.form {
+  position: relative;
+}
+.form input {
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 15px;
+  color: #808080;
+  padding: 2vw 35% 2vw 1vw;
+  margin: 7% 0 3% 0;
+  font-size: 1vw;
+}
+.form button {
+  font-size: 1vw;
+  position: absolute;
+  padding: 1.5vw 3vw;
+  background-color: #4754EB;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  bottom: 20%;
+  left: 40%;
 }
 
 /*# sourceMappingURL=main.css.map */

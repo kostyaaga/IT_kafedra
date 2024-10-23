@@ -9,12 +9,12 @@
 }
 
 html{
-  background-color: #F2F2F2;
+  background-color: #e4e4e4;
 }
 
 body{
   margin: 24px;
-  background-color: #FFFF;
+  background-color: #ffffff;
   border-radius: 25px;
   font-family: 'VisueltPro';
   display: block;
@@ -224,11 +224,8 @@ $color-gray: #808080;
 }
 
 .work{
-  padding: 30px;
+  padding: 5% 0 3% 0;
   background: linear-gradient(40deg, #eb478b5e -95%, #FFFFFF 68%, #4754eb61 82%, #8633b080 92%);
-}
-
-.work{
   h2{
     font-size: 3vw;
   }
@@ -297,4 +294,176 @@ $color-gray: #808080;
   font-size: 0.9vw;
   width: 60%;
 }
+
+.tariff-title{
+  font-size: 3vw;
+  margin: 6% 0;
+}
+
+.tariff-items{
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.tariff-item__title{
+  font-size: 1.4vw;
+}
+
+.tariff-price p:first-child{
+    color: $color-blue;
+}
+
+.tariff-price p:last-child{
+  color: $color-gray;
+}
+
+.tariff-price{
+  margin: 2% 0 8%;
+  display: flex;
+}
+
+.tariff-item__description{
+  display: flex;
+  gap: 5%;
+  margin-top: 8%;
+  align-items: start;
+  color: $color-gray;
+  img{
+    width: 2vw;
+  }
+  p{
+    font-size: 1vw;
+  }
+}
+
+.tariff-item{
+  button{
+    width: 17vw;
+    margin: 15% 0 30%;
+    height: 3vw;
+    border: none;
+    border-radius: 15px;
+    color: $color-blue;
+    background-color: #ffffff;
+    font-size: 1vw;
+
+  }
+}
+
+.comments{
+  padding: 7% 0 ;
+  background: linear-gradient(90deg, #FFFFFF 72%, #4754eb57 87%, #8633b069 95%);}
+
+.comments-inner{
+  h3{
+    font-size: 3vw;
+    margin-bottom: 5%;
+  }
+
+  > p{
+    text-align: center;
+    color: $color-gray;
+    font-size: 1.3vw;
+  }
+}
+
+.comments-items{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.comments-item{
+  width: 40%;
+  background: #ffffff;
+  border-radius: 15px;
+  margin-bottom: 3%;
+  padding: 3%;
+
+  > p{
+    font-size: 1.1vw;
+    color: $color-gray;
+    margin: 7% 0 2% 0;
+  }
+}
+
+.comments-item__title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3vw;
+
+  div{
+    display: flex;
+    align-items: center;
+
+
+    img{
+      border-radius: 360px;
+      margin-right: 10%;
+      width: 6.5vw;
+    }
+
+    .name{
+      white-space: nowrap;
+    }
+  }
+}
+
+.comments-item__star{
+  img{
+    width: 2vw;
+  }
+}
+
+.sale{
+  display: flex;
+  align-items: center;
+  gap: 10%;
+
+  img{
+    width: 50vw;
+  }
+}
+
+.sale-text{
+  h2{
+    font-size: 3vw;
+  }
+
+  p{
+    font-size: 0.9vw;
+    width: 70%;
+  }
+
+  a{
+    color: $color-blue;
+  }
+}
+
+.form{
+  position: relative;
+  input{
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 15px;
+    color: $color-gray;
+    padding: 2vw 35% 2vw 1vw;
+    margin: 7% 0 3% 0;
+    font-size: 1vw;
+  }
+  button{
+    font-size: 1vw;
+    position: absolute;
+    padding: 1.5vw 3vw;
+    background-color: $color-blue;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    bottom: 20%;
+    left: 40%;
+  }
+}
+
 
