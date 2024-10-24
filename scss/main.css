@@ -135,12 +135,13 @@ header {
 }
 
 .main-header__description {
-  margin-bottom: 120px;
+  margin-bottom: 10%;
 }
 
 .main-header__scroll {
   display: flex;
   align-items: center;
+  margin-top: 50%;
 }
 
 .scroll-text {
@@ -208,7 +209,7 @@ header {
   font-size: 90%;
   max-width: 80%;
   color: #808080;
-  margin: 16px 0 100px;
+  margin: 5% 0;
   line-height: 25px;
 }
 
@@ -252,10 +253,12 @@ header {
 .work-text {
   display: flex;
   flex-direction: column;
-  gap: 5%;
+  width: 80%;
 }
 .work-text h3 {
-  font-size: 2.5vw;
+  font-size: 2vw;
+  margin-bottom: 5%;
+  width: 100%;
 }
 .work-text button {
   font-size: 1vw;
@@ -265,12 +268,13 @@ header {
   width: 15vw;
   height: 2.8vw;
   border-radius: 15px;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .work-text__main {
   color: #4754EB;
   font-size: 1.4vw;
+  margin-bottom: 5%;
 }
 
 .work-text__description {
@@ -286,7 +290,7 @@ header {
 
 .tariff-items {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 5%;
 }
 
@@ -338,7 +342,7 @@ header {
 }
 
 .comments-inner h3 {
-  font-size: 3vw;
+  font-size: 2vw;
   margin-bottom: 5%;
 }
 .comments-inner > p {
@@ -363,7 +367,7 @@ header {
 .comments-item > p {
   font-size: 1.1vw;
   color: #808080;
-  margin: 7% 0 2% 0;
+  margin: 2% 0 1% 0;
 }
 
 .comments-item__title {
@@ -393,6 +397,7 @@ header {
   display: flex;
   align-items: center;
   gap: 10%;
+  padding: 5% 0;
 }
 .sale img {
   width: 50vw;
@@ -451,12 +456,124 @@ header {
   align-items: center;
   background: rgba(255, 255, 255, 0.5);
 }
+.question-tittle img {
+  width: 5vw;
+}
 
 .question-text {
   background: rgba(255, 255, 255, 0.3);
   padding: 3%;
   font-size: 1.1vw;
   border-radius: 0 0 15px 15px;
+}
+
+.feedback {
+  display: flex;
+  gap: 5%;
+  padding: 10% 0;
+}
+.feedback img {
+  width: 50vw;
+  height: 50vw;
+}
+
+.feedback-text h3 {
+  font-size: 2vw;
+  margin-bottom: 3%;
+}
+.feedback-text > p {
+  font-size: 1vw;
+  margin-bottom: 3%;
+  width: 70%;
+  color: #808080;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0;
+}
+.feedback-form input {
+  margin-bottom: 5%;
+  border-radius: 15px;
+  border: none;
+  color: #808080;
+  background-color: #F2F2F2;
+  padding: 2vw;
+  width: 80%;
+  font-size: 1vw;
+}
+.feedback-form div {
+  display: flex;
+  gap: 3%;
+  align-items: center;
+}
+.feedback-form div button {
+  border: none;
+  border-radius: 15px;
+  background-color: #4754EB;
+  color: white;
+  padding: 1.5vw 2vw;
+  white-space: nowrap;
+  font-size: 1vw;
+}
+.feedback-form div p {
+  font-size: 0.7vw;
+  width: 50%;
+  color: #808080;
+}
+
+footer {
+  background-color: #4754EB;
+  border-radius: 0 0 15px 15px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 0;
+}
+.footer-inner p {
+  color: white;
+  font-size: 1vw;
+}
+.footer-inner a {
+  color: white;
+  font-size: 1vw;
+  white-space: nowrap;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+@media (max-width: 800px) {
+  .main-header, .advantege-items, .work-main, .tariff-items, .comments-items, .sale {
+    flex-wrap: wrap;
+  }
+  .main-header__scroll {
+    display: none;
+  }
+  .main-hedear__image {
+    margin: 0;
+  }
+  .main-hedear__image img {
+    width: 50vw;
+  }
+  .header {
+    padding: 0;
+  }
+  .tariff-item {
+    width: 25vw;
+  }
+  .comments-item {
+    width: 100vw;
+  }
+  .feedback img {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

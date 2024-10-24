@@ -139,12 +139,13 @@ $color-gray: #808080;
 }
 
 .main-header__description{
-  margin-bottom: 120px;
+  margin-bottom: 10%;
 }
 
 .main-header__scroll{
   display: flex;
   align-items: center;
+  margin-top: 50%;
 }
 
 .scroll-text{
@@ -218,7 +219,7 @@ $color-gray: #808080;
     font-size: 90%;
     max-width: 80%;
     color: $color-gray;
-    margin: 16px 0 100px;
+    margin:5% 0;
     line-height: 25px;
   }
 }
@@ -266,10 +267,12 @@ $color-gray: #808080;
 .work-text{
   display: flex;
   flex-direction: column;
-  gap: 5%;
+  width: 80%;
 
   h3{
-    font-size: 2.5vw;
+    font-size: 2vw;
+    margin-bottom: 5%;
+    width: 100%;
   }
 
   button{
@@ -280,13 +283,14 @@ $color-gray: #808080;
     width: 15vw;
     height: 2.8vw;
     border-radius: 15px;
-    margin-top: 10%;
+    margin-top: 5%;
   }
 }
 
 .work-text__main{
   color: $color-blue;
   font-size: 1.4vw;
+  margin-bottom: 5%;
 }
 
 .work-text__description{
@@ -302,7 +306,7 @@ $color-gray: #808080;
 
 .tariff-items{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 5%;
 }
 
@@ -357,7 +361,7 @@ $color-gray: #808080;
 
 .comments-inner{
   h3{
-    font-size: 3vw;
+    font-size: 2vw;
     margin-bottom: 5%;
   }
 
@@ -384,7 +388,7 @@ $color-gray: #808080;
   > p{
     font-size: 1.1vw;
     color: $color-gray;
-    margin: 7% 0 2% 0;
+    margin: 2% 0 1% 0;
   }
 }
 
@@ -421,7 +425,7 @@ $color-gray: #808080;
   display: flex;
   align-items: center;
   gap: 10%;
-
+  padding: 5% 0;
   img{
     width: 50vw;
   }
@@ -486,6 +490,10 @@ background: linear-gradient(212deg, rgb(235 71 139 / 37%) -95%, #FFFFFF 68%, rgb
   justify-content: space-between;
   align-items: center;
   background: rgb(255 255 255 / 50%);
+
+  img{
+    width: 5vw;
+  }
 }
 
 .question-text{
@@ -495,4 +503,122 @@ background: linear-gradient(212deg, rgb(235 71 139 / 37%) -95%, #FFFFFF 68%, rgb
   border-radius: 0 0 15px 15px;
 }
 
+.feedback{
+  display: flex;
+  gap: 5%;
+  padding: 10% 0;
+
+  img{
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
+.feedback-text{
+  h3{
+    font-size: 2vw;
+    margin-bottom: 3%;
+  }
+
+  > p{
+    font-size: 1vw;
+    margin-bottom: 3%;
+    width: 70%;
+    color: $color-gray;
+  }
+}
+
+.feedback-form{
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0;
+  input{
+    margin-bottom: 5%;
+    border-radius: 15px;
+    border: none;
+    color: $color-gray;
+    background-color: #F2F2F2;
+    padding: 2vw ;
+    width: 80%;
+    font-size: 1vw;
+  }
+
+  div{
+    display: flex;
+    gap: 3%;
+    align-items: center;
+
+    button{
+      border: none;
+      border-radius: 15px;
+      background-color: $color-blue;
+      color: white;
+      padding: 1.5vw 2vw;
+      white-space: nowrap;
+      font-size: 1vw;
+    }
+
+    p{
+      font-size: 0.7vw;
+      width: 50%;
+      color: $color-gray;
+    }
+  }
+}
+
+footer{
+
+  background-color: $color-blue;
+  border-radius: 0 0 15px 15px;
+}
+
+.footer-inner{
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 0;
+  p{
+    color: white;
+    font-size: 1vw;
+  }
+  a{
+    color: white;
+    font-size: 1vw;
+    white-space: nowrap;
+  }
+}
+
+.footer-link{
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+@media (max-width: 800px) {
+  .main-header, .advantege-items, .work-main, .tariff-items, .comments-items, .sale{
+    flex-wrap: wrap;
+  }
+  .main-header__scroll{
+    display: none;
+  }
+  .main-hedear__image{
+    margin: 0;
+    img{
+      width: 50vw;
+    }
+  }
+  .header{
+    padding: 0;
+  }
+  .tariff-item{
+    width: 25vw;
+  }
+  .comments-item{
+    width: 100vw;
+  }
+  .feedback{
+    img{
+      display: none;
+    }
+  }
+}
 
